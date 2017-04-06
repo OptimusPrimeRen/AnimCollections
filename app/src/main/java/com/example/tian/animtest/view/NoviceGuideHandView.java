@@ -1,4 +1,4 @@
-package com.example.tian.animtest;
+package com.example.tian.animtest.view;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -15,6 +15,8 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
+
+import com.example.tian.animtest.R;
 
 /**
  * Created by Tian on 17/3/8.

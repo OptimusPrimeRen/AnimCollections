@@ -4,36 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_bright"
     tools:context="com.example.tian.animtest.MainActivity">
 
-    <!--<RelativeLayout-->
-    <!--android:layout_width="322dp"-->
-    <!--android:layout_height="288dp">-->
-
-    <!--<ImageView-->
-    <!--android:id="@+id/iv_novice_guide_image_1"-->
-    <!--android:layout_width="322dp"-->
-    <!--android:layout_height="288dp"-->
-    <!--android:background="@android:color/holo_blue_bright"-->
-    <!--android:src="@drawable/novice_guide_image_1"/>-->
-
-    <!--<com.example.tian.animtest.NoviceGuideHandView-->
-    <!--android:layout_width="238dp"-->
-    <!--android:layout_height="238dp"-->
-    <!--android:layout_alignParentBottom="true"-->
-    <!--android:layout_centerHorizontal="true"-->
-    <!--android:layout_gravity="center"/>-->
-    <!--</RelativeLayout>-->
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/view_pager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
-    <com.example.tian.animtest.view.CircleIndicatorView
+    <com.example.tian.animtest.view.BezierCurveLoadingView
         android:id="@+id/circle_indicator"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_alignParentBottom="true"/>
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"/>
 </RelativeLayout>
