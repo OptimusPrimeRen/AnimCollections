@@ -53,7 +53,7 @@ public class TabLayout extends LinearLayout {
                     child.setTextColor(mNormalColor);
                 }
             }
-            TabLayout.this.scrollTo((int) (getChildWidth() * positionOffset),0);
+            TabLayout.this.scrollTo((int) (getChildWidth() * positionOffset), 0);
             invalidate();
         }
     };
@@ -102,7 +102,7 @@ public class TabLayout extends LinearLayout {
     public void initTitles(@NonNull List<String> titleList) {
         TextView titleText;
         LayoutParams params = new LayoutParams(0, ViewGroup.LayoutParams.MATCH_PARENT);
-        params.width = 1080/mMaxVisiableTabCount;
+        params.width = 1080 / mMaxVisiableTabCount;
         params.bottomMargin = (int) mDividerHeight;
         String title;
         for (int i = 0; i < titleList.size(); i++) {
