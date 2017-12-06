@@ -6,4 +6,15 @@
         <attr name="cycleTime" format="integer"/>
         <attr name="rotateDegreesOffset" format="integer"/>
     </declare-styleable>
+
+    <declare-styleable name="TabLayout">
+        <attr name="indicatorWidth" format="dimension"/>
+        <attr name="indicatorHeight" format="dimension"/>
+        <attr name="indicatorColor" format="color"/>
+        <attr name="dividerHeight" format="dimension"/>
+        <attr name="dividerColor" format="color"/>
+        <attr name="normalColor" format="color"/>
+        <attr name="selectColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+    </declare-styleable>
 </resources>

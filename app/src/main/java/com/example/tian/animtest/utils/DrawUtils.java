@@ -6,7 +6,7 @@ import android.content.Context;
  * Created by Tian on 17/3/13.
  */
 
-public class DensityUtil {
+public class DrawUtils {
 
     private static float sScale;
 

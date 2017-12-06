@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_locker_fortune_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    tools:background="@android:color/black"
+    tools:visibility="visible">
+
+    <View
+        android:id="@+id/v_locker_card_bg"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#66ffffff"/>
+
+    <ImageView
+        android:id="@+id/iv_locker_horo_icon"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_launcher_round"/>
+
+    <TextView
+        android:id="@+id/tv_locker_horo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_locker_horo_icon"
+        android:layout_marginLeft="12dp"
+        android:text="Sagittarius"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/tv_locker_fortune_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_locker_horo_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Today`s Love Success Rating"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <RatingBar
+        android:id="@+id/rb_locker_fortune_rating"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/tv_locker_fortune_rating"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:rating="4"/>
+
+    <TextView
+        android:id="@+id/tv_locker_fortune_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/rb_locker_fortune_rating"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="gfhsadkjghkjsdghkjshgksdhghsdghksjdghkjsdhgkjsdhgkjsdhgkjshgkjsadhgkjsdhgkjsdhgkjashgjkshgkjsdhgjksdhgsjkdghjksghksjhgkjshgkjsaghksjdhgksjhgkjsahgkjshgkjshgkjshgksjahgkjsahgkjahsgkjsdahgkjashgjkshgkjsadghkjsadghjk"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"/>
+
+
+    <!--<com.go.horoscope.widget.SpecialShapeView-->
+    <!--android:layout_width="34dp"-->
+    <!--android:layout_height="17dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_below="@+id/iv_locker_learn_more"-->
+    <!--android:layout_marginRight="12dp"-->
+    <!--android:layout_marginTop="-13dp"-->
+    <!--app:shape="2"/>-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_locker_learn_more"-->
+        <!--android:layout_width="26dp"-->
+        <!--android:layout_height="26dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_below="@id/tv_locker_fortune_detail"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginTop="13dp"-->
+        <!--android:src="@mipmap/ic_launcher"-->
+        <!--android:text="Learn More"-->
+        <!--android:visibility="gone"/>-->
+
+</RelativeLayout>

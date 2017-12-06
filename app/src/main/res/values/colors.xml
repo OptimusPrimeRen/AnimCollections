@@ -3,4 +3,18 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="success_rating_lover_top_color">#fe769f</color>
+    <color name="success_rating_lover_bottom_color">#ff696d</color>
+    <color name="success_rating_healthy_top_color">#29fce1</color>
+    <color name="success_rating_healthy_bottom_color">#1df3b2</color>
+    <color name="success_rating_wealth_top_color">#2bcffe</color>
+    <color name="success_rating_wealth_bottom_color">#1a7ef2</color>
+    <color name="success_rating_family_top_color">#d098f3</color>
+    <color name="success_rating_family_bottom_color">#8e9cfd</color>
+    <color name="success_rating_career_top_color">#fba749</color>
+    <color name="success_rating_career_bottom_color">#ff9e6c</color>
+    <color name="success_rating_marriage_top_color">#f6d254</color>
+    <color name="success_rating_marriage_bottom_color">#ff9e6c</color>
+
 </resources>

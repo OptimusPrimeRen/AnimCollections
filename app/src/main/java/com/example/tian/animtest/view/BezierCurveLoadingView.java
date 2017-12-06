@@ -2,7 +2,6 @@ package com.example.tian.animtest.view;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
-import android.content.pm.ResolveInfo;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -13,11 +12,11 @@ import android.util.AttributeSet;
 import android.view.View;
 
 import com.example.tian.animtest.R;
-import com.example.tian.animtest.utils.DensityUtil;
+import com.example.tian.animtest.utils.DrawUtils;
 
 /**
  * Created by Tian on 17/3/10.
- * 贝塞尔loading动画
+ * Loading动画  （演示白塞尔曲线的使用）
  */
 
 public class BezierCurveLoadingView extends View {
@@ -62,7 +61,7 @@ public class BezierCurveLoadingView extends View {
     private void init(Context context, AttributeSet attrs, int defStyleAttr) {
         final TypedArray a = context.obtainStyledAttributes(
                 attrs, R.styleable.BezierCurveLoadingView, defStyleAttr, 0);
-        mCircleInitRadius = DensityUtil.dip2px(a.getDimension(R.styleable.BezierCurveLoadingView_circleSize, 0));
+        mCircleInitRadius = DrawUtils.dip2px(a.getDimension(R.styleable.BezierCurveLoadingView_circleSize, 0));
         mCircleColor = a.getColor(R.styleable.BezierCurveLoadingView_circleColor, DEFAULT_CIRCLE_COLOR);
         mCycleTime = a.getInt(R.styleable.BezierCurveLoadingView_cycleTime, DEFAULT_CYCLE_TIME);
         mDegreesOffset = a.getInt(R.styleable.BezierCurveLoadingView_rotateDegreesOffset, DEFAULT_ROTATE_DEGREES_OFFSET);

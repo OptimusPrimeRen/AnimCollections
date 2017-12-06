@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_main_card">
+
+    <TextView
+        android:id="@+id/tv_rating_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:layout_marginTop="20dp"
+        android:text="Today`s Success Rating"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.example.tian.animtest.view.GradientVerticalProgressBar
+        android:id="@+id/pb_lover"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/pb_healthy"
+        app:layout_constraintTop_toBottomOf="@id/tv_rating_title"/>
+
+    <com.example.tian.animtest.view.GradientVerticalProgressBar
+        android:id="@+id/pb_healthy"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/pb_lover"
+        app:layout_constraintRight_toLeftOf="@+id/pb_wealth"
+        app:layout_constraintTop_toBottomOf="@id/tv_rating_title"/>
+
+    <com.example.tian.animtest.view.GradientVerticalProgressBar
+        android:id="@+id/pb_wealth"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/pb_healthy"
+        app:layout_constraintRight_toLeftOf="@+id/pb_family"
+        app:layout_constraintTop_toBottomOf="@id/tv_rating_title"/>
+
+    <com.example.tian.animtest.view.GradientVerticalProgressBar
+        android:id="@+id/pb_family"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/pb_wealth"
+        app:layout_constraintRight_toLeftOf="@+id/pb_career"
+        app:layout_constraintTop_toBottomOf="@id/tv_rating_title"/>
+
+    <com.example.tian.animtest.view.GradientVerticalProgressBar
+        android:id="@+id/pb_career"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/pb_family"
+        app:layout_constraintRight_toLeftOf="@+id/pb_manager"
+        app:layout_constraintTop_toBottomOf="@id/tv_rating_title"/>
+
+    <com.example.tian.animtest.view.GradientVerticalProgressBar
+        android:id="@+id/pb_manager"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/pb_career"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_rating_title"/>
+
+
+</android.support.constraint.ConstraintLayout>

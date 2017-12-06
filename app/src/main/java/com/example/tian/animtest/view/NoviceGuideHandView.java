@@ -20,7 +20,7 @@ import com.example.tian.animtest.R;
 
 /**
  * Created by Tian on 17/3/8.
- * 新手引导的手  视图
+ * app引导页视图 （演示PorterDuffXfermode的使用）
  */
 
 public class NoviceGuideHandView extends View {
